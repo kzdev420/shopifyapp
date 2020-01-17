@@ -2,7 +2,7 @@
 <p>
     <h2> Test Project </h1> 
 </p>
-<%= form_with(url: "/", method: "get") do %>
+<%= form_with(url: "/", method: "get", local: true) do %>
     <p>
     <%= label_tag(:start_date, "Start Date:") %>
     <%= date_field_tag(:start_date) %>
